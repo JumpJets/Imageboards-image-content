@@ -1,0 +1,40 @@
+@-moz-document domain("gelbooru.com"), domain("konachan.com"), domain("danbooru.donmai.us"), domain("yande.re"), domain("chan.sankakucomplex.com"), domain("zerochan.net"), domain("idol.sankakucomplex.com"), domain("sakugabooru.com") {
+#image, #fullsize img {
+	transition: .15s ease-in-out;
+}
+/* Gelbooru, Danbooru, Konachan, Sankakucomplex, yande.re, Sakugabooru */
+#image:hover, #gelcomVideoPlayer:hover, #post-view video:hover {
+	position: fixed;
+	top: 1px;
+	left: 226px;
+	max-height: unset !important;
+	max-width: unset !important;
+	height: calc(100vh - 1px) !important;
+	width: calc(100vw - 244px) !important;
+	object-fit: contain;
+	z-index: 5;
+}
+/* Zerochan on page and full size */
+#large img:hover {
+	position: fixed;
+	top: 1px;
+	right: 500px;
+	max-height: unset !important;
+	max-width: unset !important;
+	height: calc(100vh - 3px) !important;
+	width: calc(100vw - 518px) !important;
+	object-fit: contain;
+	z-index: 5;
+}
+#fullsize img:hover {
+	position: fixed;
+	top: 1px;
+	left: 1px;
+	max-height: unset !important;
+	max-width: unset !important;
+	height: calc(100vh - 1px) !important;
+	width: calc(100vw - 19px) !important;
+	object-fit: contain;
+	z-index: 5;
+}
+}
